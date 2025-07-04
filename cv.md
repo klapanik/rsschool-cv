@@ -15,7 +15,7 @@
 
 ## **🎯 Mission Statement**  
 
-> [!NODE]
+> [!TIP]
 > *"Aspiring to become a **React developer at MAANG** and eventually launch my own tech business. At 14, I’m already building real-world projects, leveraging my strong communication skills and passion for problem-solving."*  
 
 ### **🌟 Strengths**  
@@ -78,10 +78,10 @@ function longestCollatz(inputArray) {
 
 ## **💼 Work Experience**
 
->[!IMPORTANT]
->**🚧 No formal employment yet, but...**
+> [!IMPORTANT]
+> **🚧 No formal employment yet, but...**
 >
-**Upcoming Commercial Project** (React Developer)
+> **Upcoming Commercial Project** (React Developer)
 > - Selected to build a web site for a local medicine business using **React TS + Tailwind**.
 > - Responsibilities: UI development, client feedback integration, and deadline management.
 
@@ -104,8 +104,8 @@ function longestCollatz(inputArray) {
 - 📖 Technical **Reading**: Regularly digest *React* docs and MDN articles.
 - 🎧 **Listening**: Watch *MAANG* conference talks.
 
-> [!GOAL]
-🚀 Goal for 2024: Achieve C1 via IELTS/TOEFL practice.
+> [!IMPORTANT]
+> 🚀 Goal for 2024: Achieve C1 via IELTS/TOEFL practice.
 
 ---
 
