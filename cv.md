@@ -15,7 +15,6 @@
 
 ## **🎯 Mission Statement**  
 
-> [!TIP]
 > *"Aspiring to become a **React developer at MAANG** and eventually launch my own tech business. At 14, I’m already building real-world projects, leveraging my strong communication skills and passion for problem-solving."*  
 
 ### **🌟 Strengths**  
@@ -41,44 +40,43 @@
 
 ``` javascript
 function longestCollatz(inputArray) {
-        let collatzResult = []
+    let collatzResult = []
 
-        for (let i in inputArray) {
-            let n = inputArray[i];
-            let collatzNumber = 0;
+    for (let i in inputArray) {
+        let n = inputArray[i];
+        let collatzNumber = 0;
 
-            while (n !== 1) {
-                if (n % 2 === 0) {
-                    n = n / 2
-                } else {
-                    n = 3 * n + 1
-                }
+        while (n !== 1) {
+            if (n % 2 === 0) {
+                n = n / 2
+            } else {
+                n = 3 * n + 1
+            }
 
-                collatzNumber++
-            }
+            collatzNumber++
+        }
 
-            let elem = inputArray[i];
+        let elem = inputArray[i];
 
-            let collatzObject = {
-                value: elem,
-                collatzNumber,
-            }
+        let collatzObject = {
+            value: elem,
+            collatzNumber,
+        }
 
-            collatzResult.unshift(collatzObject);
-        }
+        collatzResult.unshift(collatzObject);
+    }
 
-        let maxCollatzObject = collatzResult.reduce((accamulator, current) => accamulator.collatzNumber > current.collatzNumber ? accamulator : current);
-        let maxCollatzValue = maxCollatzObject.value;
+    let maxCollatzObject = collatzResult.reduce((accamulator, current) => accamulator.collatzNumber > current.collatzNumber ? accamulator : current);
+    let maxCollatzValue = maxCollatzObject.value;
 
-        return maxCollatzValue;
-    }
+    return maxCollatzValue;
+}
 ```
 
 ---
 
 ## **💼 Work Experience**
 
-> [!IMPORTANT]
 > **🚧 No formal employment yet, but...**
 >
 > **Upcoming Commercial Project** (React Developer)
@@ -104,7 +102,6 @@ function longestCollatz(inputArray) {
 - 📖 Technical **Reading**: Regularly digest *React* docs and MDN articles.
 - 🎧 **Listening**: Watch *MAANG* conference talks.
 
-> [!IMPORTANT]
 > 🚀 Goal for 2024: Achieve C1 via IELTS/TOEFL practice.
 
 ---
