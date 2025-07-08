@@ -1,10 +1,11 @@
 :root {
     --white: #FFFFFF;
     --primary-color: #1E3A8A;
-    --secondaru-color: #F59E0B;
+    --secondary-color: #F59E0B;
     --accent-color: #10B981;
-    --primary-gradient: linear-gradient(90deg, var(--primary-color) 0%, var(--acent-color) 70%);
+    --primary-gradient: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 70%);
     --primary-text-color: #E5E7EB;
+    --primary-font-family: 'Lato', sans-serif;
 }
 
 * {
@@ -14,7 +15,8 @@
 }
 
 .page-header {
-    font-family: 'Lato', sans-serif;
+    z-index: 100;
+    font-family: var(--primary-font-family);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -64,4 +66,100 @@ h1 {
 
 .site-navigation__item:hover .site-navigation__link {
     color: var(--primary-color);
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 153px 70px 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+}
+
+.avatar,
+.avatar img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.avatar {
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-size: 21px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: moveAround 10s ease-in-out infinite alternate;
+}
+
+.avatar img {
+    object-fit: cover;
+}
+
+.info-text {
+    margin: auto 0;
+}
+
+.info-text p {
+    font-size: 36px;
+    font-weight: 700;
+    opacity: 0;
+    color: var(--secondary-color);
+    text-shadow: var(--primary-color) 2px 5px;
+}
+
+.brief-info {
+    text-align: right;
+    margin: auto 0;
+}
+
+.brief-info__title {
+    font-size: 36px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.brief-info__list {
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 21px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.brief-info__list li span {
+    color: var(--primary-text-color);
+    transition: color .4s ease-in-out;
+}
+
+.brief-info__list li:hover span {
+    color: var(--primary-color);
+}
+
+@keyframes moveAround {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, -50px);
+    }
+
+    50% {
+        transform: translate(20px, 0);
+    }
+
+    75% {
+        transform: translate(10px, 50px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
 }
