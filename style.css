@@ -6,6 +6,11 @@
     --primary-gradient: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 70%);
     --primary-text-color: #E5E7EB;
     --primary-font-family: 'Lato', sans-serif;
+
+    --telegram-color: #0088cc;
+    --linkedin-color: #0a66c2;
+    --github-color: #181717;
+    --email-color: #d44638;
 }
 
 * {
