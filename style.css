@@ -142,7 +142,6 @@ h1 {
     color: var(--primary-color);
 }
 
-
 .about-me {
     position: relative;
     background-color: var(--primary-color);
@@ -167,7 +166,16 @@ h1 {
 }
 
 .about-me__facts li {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: box-shadow .4s ease, transform .4s ease-in;
+}
+
+.about-me__facts li:hover {
+    box-shadow: 0 5px 15px var(--white);
+    transform: translateX(5%) translateY(-8%);
 }
 
 .about-me__anchor {
