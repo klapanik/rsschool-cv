@@ -267,6 +267,104 @@ h1 {
     fill: var(--email-color);
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    font-family: var(--primary-font-family);
+    box-shadow: -1px -13px 11px -2px rgba(34, 60, 80, 0.2) inset;
+}
+
+.skills__title {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 35px;
+}
+
+.skills__hard,
+.skills__soft {
+    cursor: pointer;
+    background: var(--primary-gradient);
+    border-radius: 30px;
+    width: 60%;
+    padding: 30px 20px;
+    color: var(--primary-text-color);
+    text-align: left;
+    transition: box-shadow .6s ease-in-out, transform .6s ease;
+}
+
+.skills__hard:hover,
+.skills__soft:hover {
+    box-shadow: 0 5px 15px #5652529e;
+}
+
+.skills__hard:hover {
+    transform: translateX(-5%) translateY(-2%);
+}
+
+.skills__soft:hover {
+    transform: translateX(5%) translateY(-5%);
+}
+
+.skills__hard h3,
+.skills__soft h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.skills__hard {
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.skills__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 20px;
+}
+
+.skills__item {
+    font-size: 18px;
+    color: var(--white);
+}
+
+.skills__item::before,
+.skills__item::after {
+    color: var(--secondary-color);
+    position: absolute;
+    transition: transform .4s ease-in-out;
+}
+
+.skills__item::after {
+    content: '/>';
+    transform: translateX(5%);
+}
+
+.skills__item::before {
+    content: '<';
+    transform: translateX(-105%);
+}
+
+.skills__item:nth-child(odd):hover::before {
+    transform: rotate(-40deg) translateX(-205%) scale(2);
+}
+
+.skills__item:nth-child(odd):hover::after {
+    transform: rotate(-40deg) translateX(105%) scale(2);
+}
+
+.skills__item:nth-child(even):hover::before {
+    transform: rotate(40deg) translateX(-205%) scale(2);
+}
+
+.skills__item:nth-child(even):hover::after {
+    transform: rotate(40deg) translateX(105%) scale(2);
+}
+
 @keyframes moveAround {
     0% {
         transform: translate(0, 0);
