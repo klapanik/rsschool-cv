@@ -142,6 +142,43 @@ h1 {
     color: var(--primary-color);
 }
 
+
+.about-me {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: var(--primary-font-family);
+    text-align: center;
+    padding: 80px 10px;
+}
+
+.about-me__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about-me__facts {
+    min-height: 156px;
+    width: 700px;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 21px;
+}
+
+.about-me__facts li {
+    margin-bottom: 20px;
+}
+
+.about-me__anchor {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    z-index: -1;
+    top: -50px;
+}
+
 @keyframes moveAround {
     0% {
         transform: translate(0, 0);
