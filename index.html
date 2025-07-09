@@ -296,10 +296,51 @@
         </section>
 
         <section class="code">
-            <h2>Code from random task</h2>
-            <pre>
-                <code>Some code</code>
-            </pre>
+            <div class="code__inner-left">
+                <h2>Code example</h2>
+                <p>From random task</p>
+            </div>
+
+            <div class="code__inner-right">
+                <pre>
+                    <code>
+function longestCollatz(inputArray) {
+    let collatzResult = []
+
+    for (let i in inputArray) {
+        let n = inputArray[i];
+        let collatzNumber = 0;
+
+        while (n !== 1) {
+            if (n % 2 === 0) {
+                n = n / 2
+            } else {
+                n = 3 * n + 1
+            }
+
+            collatzNumber++
+        }
+
+        let elem = inputArray[i];
+
+        let collatzObject = {
+            value: elem,
+            collatzNumber,
+        }
+
+        collatzResult.unshift(collatzObject);
+    }
+
+    let maxCollatzObject = collatzResult.reduce((accamulator, current) => {
+        accamulator.collatzNumber > current.collatzNumber ? accamulator : current
+    });
+    
+    let maxCollatzValue = maxCollatzObject.value;
+
+    return maxCollatzValue;
+}                   </code>
+                </pre>
+            </div>
         </section>
 
         <section class="education">
