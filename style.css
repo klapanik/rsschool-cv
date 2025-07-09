@@ -582,6 +582,47 @@ h1 {
     font-weight: 600;
 }
 
+.education {
+    padding: 30px 80px;
+    font-family: var(--primary-font-family);
+}
+
+.education h2 {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px;
+    text-align: left;
+}
+
+.education-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.education-table tr:hover {
+    background-color: var(--primary-text-color);
+}
+
+.education-table td:nth-child(3) {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.education-table td:nth-child(3).completed {
+    color: var(--accent-color);
+}
+
 @keyframes moveAround {
     0% {
         transform: translate(0, 0);
