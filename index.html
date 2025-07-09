@@ -334,7 +334,7 @@ function longestCollatz(inputArray) {
     let maxCollatzObject = collatzResult.reduce((accamulator, current) => {
         accamulator.collatzNumber > current.collatzNumber ? accamulator : current
     });
-    
+
     let maxCollatzValue = maxCollatzObject.value;
 
     return maxCollatzValue;
@@ -344,7 +344,50 @@ function longestCollatz(inputArray) {
         </section>
 
         <section class="education">
-            <table></table>
+            <h2>My Education</h2>
+
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>When</th>
+                        <th>Where</th>
+                        <th>Status</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2019</td>
+                        <td>Scratch (EPAM Kids)</td>
+                        <td class="completed">Completed</td>
+                        <td>First programming experience with visual coding</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2023</td>
+                        <td>Python (MyFreedom)</td>
+                        <td class="completed">Completed</td>
+                        <td>Core Python, algorithms, and simple projects</td>
+                    </tr>
+                    <tr>
+                        <td>2024-2025</td>
+                        <td>HTML/CSS/JS (MyFreedom)</td>
+                        <td class="completed">Completed</td>
+                        <td>Frontend fundamentals and responsive design</td>
+                    </tr>
+                    <tr>
+                        <td>2025-Present</td>
+                        <td>JavaScript (RS School)</td>
+                        <td>In Progress</td>
+                        <td>Advanced JS, algorithms, and real-world projects</td>
+                    </tr>
+                    <tr>
+                        <td>2025-Present</td>
+                        <td>React (YouTube)</td>
+                        <td>Learning</td>
+                        <td>Component architecture and hooks mastery</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
         <section class="languages"></section>
