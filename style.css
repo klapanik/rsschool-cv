@@ -583,6 +583,7 @@ h1 {
 }
 
 .education {
+    position: relative;
     padding: 30px 80px;
     font-family: var(--primary-font-family);
 }
