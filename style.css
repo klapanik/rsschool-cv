@@ -112,11 +112,22 @@ h1 {
 }
 
 .info-text p {
+    display: none;
+    visibility: hidden;
     font-size: 36px;
     font-weight: 700;
     opacity: 0;
     color: var(--secondary-color);
     text-shadow: var(--primary-color) 2px 5px;
+    transition: all .4s ease;
+}
+
+.info-text p.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    color: var(--primary-color);
+    text-shadow: var(--white) 2px 5px;
 }
 
 .brief-info {

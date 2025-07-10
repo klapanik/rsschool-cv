@@ -14,4 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollToTopBtn.classList.remove('active');
         }
     });
+
+    const briefInfoSpans = document.querySelectorAll('.brief-info-span');
+    const infoText = document.querySelector('#info-text');
+
+    briefInfoSpans.forEach((span) => {
+        span.addEventListener('click', () => {
+            const text = span.innerText;
+            infoText.innerText = text;
+            infoText.classList.add('active');
+        })
+    })
 })
