@@ -138,7 +138,7 @@ h1 {
     cursor: pointer;
 }
 
-.brief-info__list li span {
+.brief-info-span {
     color: var(--primary-text-color);
     transition: color .4s ease-in-out;
 }
