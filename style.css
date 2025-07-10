@@ -714,6 +714,95 @@ h1 {
     color: #444;
 }
 
+.page-footer {
+    position: relative;
+    background-color: var(--github-color);
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px 40px;
+    font-size: 16px;
+    font-family: var(--primary-font-family);
+}
+
+.page-footer__content {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.page-footer__text span {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+
+.page-footer__text span:hover {
+    transform: scale(1.1);
+}
+
+.page-footer__github {
+    display: block;
+    position: relative;
+    background: transparent;
+    border-radius: 50%;
+    transition: transform .6s ease-in-out;
+}
+
+.page-footer__github svg {
+    color: var(--white);
+    width: 42px;
+    height: 42px;
+}
+
+.page-footer__github:hover {
+    transform: scale(1.2) translateY(10px);
+}
+
+.page-footer__github .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    padding: 3px 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all .6s ease;
+}
+
+.page-footer__github:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--white);
+    top: -30px;
+}
+
+.page-footer__rss-logo {
+    display: block;
+    background: transparent;
+}
+
+.page-footer__rss-logo svg {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 65px;
+    height: 65px;
+    fill: var(--white);
+    transition: fill .4s ease-in-out, transform .4s ease-in-out;
+}
+
+.page-footer__rss-logo svg:hover {
+    fill: var(--accent-color);
+    transform: scale(1.2);
+}
+
 @keyframes moveAround {
     0% {
         transform: translate(0, 0);
