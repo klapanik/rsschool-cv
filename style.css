@@ -852,3 +852,40 @@ h1 {
     opacity: 1;
     display: block;
 }
+
+@media (max-width: 1070px) {
+    .page-header__nav {
+        width: 15%;
+    }
+
+    .site-navigation__item {
+        margin-bottom: 2px;
+        width: fit-content;
+    }
+
+    .page-header__nav ul {
+        display: none;
+        align-self: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-header {
+        padding: 33px 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .page-header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
