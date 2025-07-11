@@ -13,6 +13,7 @@
     --email-color: #d44638;
 
     --avatar-size: 250px;
+    --contact-icon-size: 30px;
 }
 
 * {
@@ -251,8 +252,8 @@ h1 {
 }
 
 .contact svg {
-    height: 30px;
-    width: 30px;
+    height: var(--contact-icon-size);
+    width: var(--contact-icon-size);
     left: 0;
 }
 
@@ -909,12 +910,24 @@ h1 {
 }
 
 @media (max-width: 700px) {
+    :root {
+        --contact-icon-size: 25px;
+    }
+
     .page-header {
         padding: 33px 25px;
     }
 
     h1 {
         font-size: 2rem;
+    }
+
+    .contacts {
+        padding: 40px 30px;
+    }
+
+    .contact p {
+        font-size: 1.3rem;
     }
 }
 
@@ -962,6 +975,14 @@ h1 {
 }
 
 @media (max-width: 400px) {
+    :root {
+        --contact-icon-size: 23px;
+    }
+
+    .info-text p {
+        font-size: 1.2rem;
+    }
+
     h2 {
         font-size: 1.2rem;
     }
