@@ -882,6 +882,15 @@ h1 {
     .brief-info {
         text-align: center;
     }
+
+    .skills {
+        padding: 50px 30px;
+    }
+
+    .skills__hard,
+    .skills__soft {
+        width: 90%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -907,6 +916,45 @@ h1 {
     .about-me__facts li:hover {
         transform: translateX(2%) translateY(-4%);
     }
+
+    .skills {
+        padding: 30px 50px;
+    }
+
+    .skills__hard,
+    .skills__soft {
+        width: 100%;
+    }
+
+    .skills__title {
+        margin-bottom: 15px;
+    }
+
+    .skills__hard h3,
+    .skills__soft h3 {
+        font-size: 1.125rem;
+        margin-bottom: 2px;
+    }
+
+    .skills__item {
+        font-size: 1rem;
+    }
+
+    .skills__item:nth-child(odd):hover::after {
+        transform: rotate(-20deg) translateX(50%) scale(1.4);
+    }
+
+    .skills__item:nth-child(odd):hover::before {
+        transform: rotate(-20deg) translateX(-150%) scale(1.4);
+    }
+
+    .skills__item:nth-child(even):hover::after {
+        transform: rotate(20deg) translateX(50%) scale(1.4);
+    }
+
+    .skills__item:nth-child(even):hover::before {
+        transform: rotate(20deg) translateX(-150%) scale(1.4);
+    }
 }
 
 @media (max-width: 700px) {
@@ -928,6 +976,33 @@ h1 {
 
     .contact p {
         font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .skills__item {
+        font-size: 0.8rem;
+    }
+
+    .skills__hard h3,
+    .skills__soft h3 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .skills__hard:hover,
+    .skills__soft:hover {
+        transform: translateY(-1%);
+    }
+
+    .skills__hard {
+        margin-bottom: 30px;
+    }
+
+    .skills__hard,
+    .skills__soft {
+        padding: 20px 10px;
+        border-radius: 15px;
     }
 }
 
@@ -971,6 +1046,29 @@ h1 {
     .brief-info__list {
         height: 70px;
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .skills__item {
+        font-size: 0.7rem;
+    }
+
+    .skills__hard h3,
+    .skills__soft h3 {
+        font-size: .875rem;
+        margin-bottom: 0;
+    }
+
+    .skills__hard,
+    .skills__soft {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .skills__list {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
