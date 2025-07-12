@@ -1098,6 +1098,10 @@ h1 {
         padding: 7px;
         font-size: 0.875rem;
     }
+
+    .languages {
+        padding: 45px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1215,6 +1219,31 @@ h1 {
     .education-table td {
         padding: 5px;
         font-size: 0.77rem;
+    }
+
+    .languages {
+        padding: 35px;
+    }
+
+    .languages h2 {
+        margin-bottom: 10px;
+    }
+
+    .language__header h3 {
+        font-size: 1rem;
+    }
+
+    .level__badge {
+        font-size: 0.75rem;
+    }
+
+    .language__details h4 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .language__details li{
+        font-size: 0.9rem;
     }
 }
 
