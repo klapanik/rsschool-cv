@@ -1,5 +1,7 @@
 :root {
     --white: #FFFFFF;
+    --black: #000000;
+
     --primary-color: #1E3A8A;
     --secondary-color: #F59E0B;
     --accent-color: #10B981;
@@ -37,7 +39,7 @@ ol {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -74,6 +76,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    transition: transform 1s ease-in-out;
 }
 
 .site-navigation__item {
@@ -96,6 +99,61 @@ h1 {
 
 .site-navigation__item:hover .site-navigation__link {
     color: var(--primary-color);
+}
+
+.burger-checkbox {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--white);
+}
+
+.burger::before {
+    top: 0;
+    box-shadow: 5px 11px 0 var(--secondary-color);
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger:hover::before {
+    box-shadow: -5px 11px 0 var(--secondary-color);
+}
+
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox:checked+.burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked+.burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
 }
 
 .hero {
@@ -878,6 +936,7 @@ h1 {
 
 @media (max-width: 1070px) {
     .page-header__nav {
+        position: relative;
         width: 15%;
     }
 
@@ -886,10 +945,26 @@ h1 {
         width: fit-content;
     }
 
-    .page-header__nav ul {
-        display: none;
-        align-self: flex-end;
+    .site-navigation {
+        z-index: -1;
+        border-radius: 30px;
+        background-color: var(--primary-color);
+        padding: 60px 50px 10px;
+        min-width: 200px;
+        align-items: center;
+        transform: translateX(200%);
+        top: 0;
+        position: absolute;
         flex-direction: column;
+    }
+
+    .burger {
+        z-index: 100;
+        display: block;
+    }
+
+    .burger-checkbox:checked~.site-navigation {
+        transform: translateX(-30%);
     }
 
     .hero {
