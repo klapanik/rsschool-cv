@@ -310,9 +310,7 @@
                 </div>
 
                 <div class="code__inner-right">
-                    <pre>
-                    <code>
-function longestCollatz(inputArray) {
+                    <pre><code>function longestCollatz(inputArray) {
     let collatzResult = []
 
     for (let i in inputArray) {
@@ -339,15 +337,18 @@ function longestCollatz(inputArray) {
         collatzResult.unshift(collatzObject);
     }
 
-    let maxCollatzObject = collatzResult.reduce((accamulator, current) => {
-        accamulator.collatzNumber > current.collatzNumber ? accamulator : current
-    });
+    let maxCollatzObject = collatzResult.reduce(
+        (accamulator, current) => {
+        accamulator.collatzNumber > current.collatzNumber 
+            ? accamulator 
+            : current
+        }
+    );
 
     let maxCollatzValue = maxCollatzObject.value;
 
     return maxCollatzValue;
-}                   </code>
-                </pre>
+}</code></pre>
                 </div>
             </section>
 
