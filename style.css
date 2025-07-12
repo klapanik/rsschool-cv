@@ -37,6 +37,10 @@ ol {
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -83,7 +87,6 @@ h1 {
     color: var(--primary-text-color);
     font-size: 1.25rem;
     font-weight: 500;
-    text-decoration: none;
     transition: color .4s ease-in-out;
 }
 
@@ -245,7 +248,7 @@ h1 {
     transition: transform .4s ease-in-out;
 }
 
-.contact p {
+.contact a {
     margin-right: 10px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -257,7 +260,7 @@ h1 {
     left: 0;
 }
 
-.telegram {
+.telegram a {
     color: var(--telegram-color);
 }
 
@@ -265,7 +268,7 @@ h1 {
     fill: var(--telegram-color);
 }
 
-.linkedin {
+.linkedin a {
     color: var(--linkedin-color);
 }
 
@@ -273,7 +276,7 @@ h1 {
     fill: var(--linkedin-color);
 }
 
-.github {
+.github a {
     color: var(--github-color);
 }
 
@@ -281,7 +284,7 @@ h1 {
     fill: var(--github-color);
 }
 
-.email {
+.email a {
     color: var(--email-color);
 }
 
@@ -416,7 +419,6 @@ h1 {
     padding: 1px 5px;
     border-radius: 5px;
     color: var(--white);
-    text-decoration: none;
     transition: all .4s ease-in-out;
 }
 
@@ -560,7 +562,6 @@ h1 {
     background: var(--primary-text-color);
     border-radius: 6px;
     color: var(--primary-color);
-    text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     transition: background .4s ease, color .4s ease-in-out;
@@ -1011,7 +1012,7 @@ h1 {
         padding: 40px 30px;
     }
 
-    .contact p {
+    .contact a {
         font-size: 1.3rem;
     }
 
