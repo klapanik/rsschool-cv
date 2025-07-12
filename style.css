@@ -408,7 +408,7 @@ h1 {
 }
 
 .project:last-child .project__content {
-    height: 285px;
+    min-height: 285px;
 }
 
 .project:last-child .project__subtitle a {
@@ -468,7 +468,7 @@ h1 {
 
 .project__content {
     padding: 15px 40px 25px;
-    height: 480px;
+    min-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -477,8 +477,10 @@ h1 {
 .project__badges {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 12px 0;
+    row-gap: 10px;
 }
 
 .project__status {
@@ -516,7 +518,7 @@ h1 {
 }
 
 .project__description {
-    height: 170px;
+    max-height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -854,6 +856,25 @@ h1 {
     display: block;
 }
 
+@media (max-width: 1140px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project__content {
+        height: fit-content;
+        min-height: 240px;
+    }
+
+
+    .project__features {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+}
+
 @media (max-width: 1070px) {
     .page-header__nav {
         width: 15%;
@@ -977,6 +998,30 @@ h1 {
     .contact p {
         font-size: 1.3rem;
     }
+
+    .project__title {
+        margin-bottom: 1px;
+    }
+
+    .project__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .project__tech li,
+    .project__status {
+        font-size: 0.75rem;
+    }
+
+    .project__description,
+    .project__features li,
+    .project__links a {
+        font-size: 0.938rem;
+    }
+
+    .project:hover {
+        transform: translateX(0) translateY(-2%);
+        box-shadow: 0 5px 15px #5652529e;
+    }
 }
 
 @media (max-width: 590px) {
@@ -1003,6 +1048,14 @@ h1 {
     .skills__soft {
         padding: 20px 10px;
         border-radius: 15px;
+    }
+
+    .projects {
+        padding: 55px;
+    }
+
+    .project__features {
+        flex-direction: column;
     }
 }
 
@@ -1047,6 +1100,25 @@ h1 {
         height: 70px;
         font-size: 1.1rem;
     }
+
+    .projects {
+        padding: 40px 30px;
+    }
+
+    .project__tech li,
+    .project__status {
+        font-size: 0.7rem;
+    }
+
+    .project__description,
+    .project__features li,
+    .project__links a {
+        font-size: 0.875rem;
+    }
+
+    .project__links a {
+        padding: 7px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -1056,7 +1128,7 @@ h1 {
 
     .skills__hard h3,
     .skills__soft h3 {
-        font-size: .875rem;
+        font-size: 0.875rem;
         margin-bottom: 0;
     }
 
@@ -1069,6 +1141,20 @@ h1 {
     .skills__list {
         gap: 10px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        padding: 40px 10px;
+    }
+
+    .project__content {
+        padding: 7px 20px 12px;
+    }
+
+    .project__description,
+    .project__features li,
+    .project__links a {
+        font-size: 0.8rem;
     }
 }
 
@@ -1087,5 +1173,9 @@ h1 {
 
     .about-me__facts li {
         font-size: 0.9rem;
+    }
+
+    .projects {
+        gap: 30px 0;
     }
 }
