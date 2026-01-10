@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Konstantin Lapanik</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>Konstantin Lapanik</h1>
+
+            <nav class="page-header__nav">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+
+                <ul class="site-navigation">
+                    <li class="site-navigation__item">
+                        <a href="#about-me" class="site-navigation__link">About me</a>
+                    </li>
+
+                    <li class="site-navigation__item">
+                        <a href="#contacts" class="site-navigation__link">Contacts</a>
+                    </li>
+
+                    <li class="site-navigation__item">
+                        <a href="#skills" class="site-navigation__link">Skills</a>
+                    </li>
+
+                    <li class="site-navigation__item">
+                        <a href="#projects" class="site-navigation__link">Projects</a>
+                    </li>
+
+                    <li class="site-navigation__item">
+                        <a href="#education" class="site-navigation__link">Education</a>
+                    </li>
+
+                    <li class="site-navigation__item">
+                        <a href="#languages" class="site-navigation__link">Languages</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="avatar">
+                    <img src="./public/avatar.jpg" alt="Avatar">
+                </div>
+
+                <div class="info-text">
+                    <p id="info-text"></p>
+                </div>
+
+                <div class="brief-info">
+                    <h2 class="brief-info__title">Brief info</h2>
+
+                    <ul class="brief-info__list">
+                        <li>Name: <span title="Click me" class="brief-info-span">Konstantin</span></li>
+                        <li>Age: <span title="Click me" class="brief-info-span">14 years old</span></li>
+                        <li>Job: <span title="Click me" class="brief-info-span">Front-End Developer</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="about-me">
+                <div class="anchor" id="about-me"></div>
+                <h2 class="about-me__title">About me</h2>
+
+                <ol class="about-me__facts">
+                    <li>I live in <b>Minsk</b>, a vibrant city with growing IT opportunities.</li>
+
+                    <li>I study at <i>Gymnasium №16</i>, transitioning to the <b>9th</b> grade. Throughout all 8 years,
+                        I’ve
+                        maintained straight-A grades.</li>
+
+                    <li>My goal:<br>Short-term: Master <b>JavaScript</b> and <b>React</b>.<br>Long-term: Become a
+                        Frontend
+                        Developer at <b>MAANG</b>.
+                    </li>
+
+                    <li>I know: React (<i>mastering now</i>), TypeScript, JavaScript, HTML/CSS. Also i high
+                        communicability
+                        (<i>teamwork, clear explanations, conflict resolution</i>)</li>
+
+                    <li>Currently working on my <b>first</b> commercial project, applying my skills in a real-world
+                        environment.</li>
+                </ol>
+            </section>
+
+            <section class="contacts">
+                <div class="anchor" id="contacts"></div>
+                <h2 class="contacts__title">How can you contact me?</h2>
+
+                <ul class="contact__ways">
+                    <li class="contact telegram">
+                        <a href="https://t.me/ostkki" target="_blank">Telegram</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z" />
+                        </svg>
+                    </li>
+
+                    <li class="contact github">
+                        <a href="https://github.com/klapanik" target="_blank">Github</a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </li>
+
+                    <li class="contact email">
+                        <a href="mailto:lapanikkonstantin@gmail.com" target="_blank">Email</a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                        </svg>
+                    </li>
+
+                    <li class="contact linkedin">
+                        <a href="https://www.linkedin.com/in/konstantin-lapanik-715413357/" target="_blank">Linkedin</a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                        </svg>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="skills">
+                <div class="anchor" id="skills"></div>
+
+                <h2 class="skills__title">My skills</h2>
+
+                <div class="skills__hard">
+                    <h3>Hard skills</h3>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">React, Redux</li>
+                        <li class="skills__item">HTML, CSS</li>
+                        <li class="skills__item">Git, Github</li>
+                        <li class="skills__item">Css</li>
+                        <li class="skills__item">Sass</li>
+                        <li class="skills__item">Css modules</li>
+                        <li class="skills__item">Firebase</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">TypeScript</li>
+                    </ul>
+                </div>
+
+                <div class="skills__soft">
+                    <h3>Soft skills</h3>
+
+                    <ul class="skills__list">
+                        <li class="skills__item">Communication</li>
+                        <li class="skills__item">Critical thinking</li>
+                        <li class="skills__item">Problem solving</li>
+                        <li class="skills__item">Teamwork</li>
+                        <li class="skills__item">Time management</li>
+                        <li class="skills__item">Adaptabilit</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects">
+                <div class="anchor" id="projects"></div>
+
+                <div class="project">
+                    <div class="project__header">
+                        <h2 class="project__title">RentRide</h2>
+                        <h3 class="project__subtitle"><i>All types of transport in one application</i></h3>
+                    </div>
+
+                    <div class="project__content">
+                        <div class="project__badges">
+                            <ul class="project__tech">
+                                <li>HTML</li>
+                                <li>CSS modules</li>
+                                <li>JS</li>
+                            </ul>
+
+                            <div class="project__status">
+                                <span>Status:</span>
+                                <span>being finalized</span>
+                            </div>
+                        </div>
+
+                        <div class="project__description">
+                            <p><span>RentRide</span> is a single platform for renting various types of transport
+                                (scooters, bicycles, cars, etc.).</p>
+                            <p><span>Problem</span>: Disunity of rental services, difficulty comparing prices and
+                                characteristics.</p>
+                            <p><span>Solution</span>: Single application with a map, filters, reviews, and weather
+                                forecast.</p>
+                        </div>
+
+                        <ul class="project__features">
+                            <li>Search for transport on the map.</li>
+                            <li>Rental details (price, model, reviews).</li>
+                            <li>Rent in one click.</li>
+                            <li>Reviews and ratings.</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://github.com/DounarDaniel/RentRide" target="_blank">Code</a>
+                            <a href="https://rentride-app.netlify.app/" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__header">
+                        <h2 class="project__title">Wish</h2>
+                        <h3 class="project__subtitle"><i>Fulfill your wishes and receive gifts</i></h3>
+                    </div>
+
+                    <div class="project__content">
+                        <div class="project__badges">
+                            <ul class="project__tech">
+                                <li>React</li>
+                                <li>TS</li>
+                                <li>Css modules</li>
+                            </ul>
+
+                            <div class="project__status">
+                                <span>Status:</span>
+                                <span>in progress</span>
+                            </div>
+                        </div>
+
+                        <div class="project__description">
+                            <p><span>Wish</span> solves the gift problem. Ever gotten useless presents? Or struggled to
+                                pick
+                                the right gift?</p>
+                            <p><span>My project</span>: a simple tool to: get what you actually want and give with
+                                confidence</p>
+                            <p><span>My goal</span>: create an intuitive, no-fuss gifting helper.</p>
+                        </div>
+
+                        <ul class="project__features">
+                            <li>Intuitive interface - just a few clicks to use. No clutter.</li>
+                            <li>You control who sees your wishlist. Your data stays safe.</li>
+                            <li>Useful features that actually solve gift-giving problems.</li>
+                            <li>We believe good gifts make relationships warmer.</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://your-wish.netlify.app/" target="_blank">Demo</a>
+                            <a href="https://github.com/klapanik/Wish/" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__header">
+                        <h2 class="project__title">Others</h2>
+                        <h3 class="project__subtitle"><i>I also constantly make small pet projects and also want to
+                                start digging into open source code and improving it. Below is a link to my random pet
+                                project. Also you can find a link to my github </i><a href="#footer">in footer</a></h3>
+                    </div>
+
+                    <div class="project__content">
+                        <div class="project__badges">
+                            <ul class="project__tech">
+                                <li>HTML</li>
+                                <li>React</li>
+                                <li>TS</li>
+                            </ul>
+
+                            <div class="project__status">
+                                <span>Status:</span>
+                                <span>completed</span>
+                            </div>
+                        </div>
+
+
+                        <div class="project__description">
+                            <p><span>Cats API Explorer</span> - A playful interface to discover random cat images and
+                                facts.
+                            </p>
+                            <p><span>This project</span> combines my love for cats with learning API integration
+                                techniques.
+                            </p>
+                            <p><span>My goal</span> was to create a stress-relief app that's both fun and educational.
+                            </p>
+                        </div>
+
+                        <ul class="project__features">
+                            <li>Fetch data from TheCatAPI</li>
+                            <li>Responsive gallery layout</li>
+                            <li>Favorite cats collection</li>
+                            <li>Dark/light theme toggle</li>
+                        </ul>
+
+                        <div class="project__links">
+                            <a href="https://github.com/klapanik/catsApi" target="_blank">Code</a>
+                            <a href="https://klapanik.github.io/catsApi/" target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="code">
+                <div class="code__inner-left">
+                    <h2>Code example</h2>
+                    <p>From random task</p>
+                </div>
+
+                <div class="code__inner-right">
+                    <pre><code>function longestCollatz(inputArray) {
+    let collatzResult = []
+
+    for (let i in inputArray) {
+        let n = inputArray[i];
+        let collatzNumber = 0;
+
+        while (n !== 1) {
+            if (n % 2 === 0) {
+                n = n / 2
+            } else {
+                n = 3 * n + 1
+            }
+
+            collatzNumber++
+        }
+
+        let elem = inputArray[i];
+
+        let collatzObject = {
+            value: elem,
+            collatzNumber,
+        }
+
+        collatzResult.unshift(collatzObject);
+    }
+
+    let maxCollatzObject = collatzResult.reduce(
+        (accamulator, current) => {
+        accamulator.collatzNumber > current.collatzNumber 
+            ? accamulator 
+            : current
+        }
+    );
+
+    let maxCollatzValue = maxCollatzObject.value;
+
+    return maxCollatzValue;
+}</code></pre>
+                </div>
+            </section>
+
+            <section class="education">
+                <div class="anchor" id="education"></div>
+                <h2>My Education</h2>
+
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>When</th>
+                            <th>Where</th>
+                            <th>Status</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2019</td>
+                            <td>Scratch (EPAM Kids)</td>
+                            <td class="completed">Completed</td>
+                            <td>First programming experience with visual coding</td>
+                        </tr>
+                        <tr>
+                            <td>2022-2023</td>
+                            <td>Python (MyFreedom)</td>
+                            <td class="completed">Completed</td>
+                            <td>Core Python, algorithms, and simple projects</td>
+                        </tr>
+                        <tr>
+                            <td>2024-2025</td>
+                            <td>HTML/CSS/JS (MyFreedom)</td>
+                            <td class="completed">Completed</td>
+                            <td>Frontend fundamentals and responsive design</td>
+                        </tr>
+                        <tr>
+                            <td>2025-Present</td>
+                            <td>JavaScript (RS School)</td>
+                            <td>In Progress</td>
+                            <td>Advanced JS, algorithms, and real-world projects</td>
+                        </tr>
+                        <tr>
+                            <td>2025-Present</td>
+                            <td>React (YouTube)</td>
+                            <td>Learning</td>
+                            <td>Component architecture and hooks mastery</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="languages">
+                <div class="anchor" id="languages"></div>
+
+                <h2>Languages</h2>
+                <div class="language-cards">
+                    <div class="language">
+                        <div class="language__header">
+                            <h3>English</h3>
+                            <span class="level__badge b2">B2</span>
+                        </div>
+
+                        <div class="language__details">
+                            <h4><b>Upper Intermediate</b></h4>
+
+                            <ul>
+                                <li>6 years of formal education</li>
+                                <li>Currently preparing for IELTS</li>
+                                <li>Comfortable with technical documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="language__header">
+                            <h3>Russian</h3>
+                            <span class="level__badge fluent">Fluent</span>
+                        </div>
+                        <div class="language__details">
+                            <h4><strong>Native-level proficiency</strong></h4>
+                            <ul>
+                                <li>Native speaker since childhood</li>
+                                <li>Experience in professional communication</li>
+                                <li>Technical writing capability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="language__header">
+                            <h3>Belarusian</h3>
+                            <span class="level__badge native">Native</span>
+                        </div>
+                        <div class="language__details">
+                            <h4><strong>Mother tongue</strong></h4>
+                            <ul>
+                                <li>Born and raised in Belarus</li>
+                                <li>Cultural understanding</li>
+                                <li>Familiar with local dialects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer" id="footer">
+            <div class="page-footer__content">
+                <h3 class="page-footer__text">&copy; 2025 by <span>Konstantin Lapanik</span>
+                </h3>
+
+                <a class="page-footer__github" href="https://github.com/klapanik" target="_blank">
+                    <div class="tooltip">Github</div>
+                    <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor"
+                        fill="none" viewBox="0 0 24 24">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+            <a class="page-footer__rss-logo" href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 552.8 205.3">
+                    <path
+                        d="m285.4 68 26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z" />
+                    <path
+                        d="m133 167.2 24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z" />
+                    <path
+                        d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z" />
+                    <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+                    <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63" ry="51.8" />
+                    <defs>
+                        <ellipse id="SVGID_1_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                            ry="51.8" />
+                    </defs>
+                    <clipPath id="SVGID_2_">
+                        <use xlink:href="#SVGID_1_" overflow="visible" />
+                    </clipPath>
+                    <g style="clip-path:url(#SVGID_2_)">
+                        <path transform="rotate(-37.001 420.82 68.353)" d="M330.9-14.2h179.8v165.1H330.9z" />
+                        <g id="Layer_2_1_">
+                            <defs>
+                                <path id="SVGID_3_" transform="rotate(-37.001 420.82 68.353)"
+                                    d="M330.9-14.2h179.8v165.1H330.9z" />
+                            </defs>
+                            <clipPath id="SVGID_4_">
+                                <use xlink:href="#SVGID_3_" overflow="visible" />
+                            </clipPath>
+                            <g id="Layer_1-2" style="clip-path:url(#SVGID_4_)">
+                                <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                                    ry="51.8" />
+                                <defs>
+                                    <ellipse id="SVGID_5_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9"
+                                        rx="63" ry="51.8" />
+                                </defs>
+                                <clipPath id="SVGID_6_">
+                                    <use xlink:href="#SVGID_5_" overflow="visible" />
+                                </clipPath>
+                                <g style="clip-path:url(#SVGID_6_)">
+                                    <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                                    <defs>
+                                        <path id="SVGID_7_" transform="rotate(-37 420.799 68.802)"
+                                            d="M357.8 17h125.9v103.7H357.8z" />
+                                    </defs>
+                                    <clipPath id="SVGID_8_">
+                                        <use xlink:href="#SVGID_7_" overflow="visible" />
+                                    </clipPath>
+                                    <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                                        ry="51.8" style="clip-path:url(#SVGID_8_)" />
+                                    <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z"
+                                        style="fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10;clip-path:url(#SVGID_8_)" />
+                                    <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                                        ry="51.8" />
+                                    <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                                    <defs>
+                                        <path id="SVGID_9_" transform="rotate(-37 420.799 68.802)"
+                                            d="M357.8 17h125.9v103.7H357.8z" />
+                                    </defs>
+                                    <clipPath id="SVGID_10_">
+                                        <use xlink:href="#SVGID_9_" overflow="visible" />
+                                    </clipPath>
+                                    <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                                        ry="51.8" style="clip-path:url(#SVGID_10_)" />
+                                    <path transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z"
+                                        style="fill:none;stroke:#000;stroke-width:4;stroke-miterlimit:10;clip-path:url(#SVGID_10_)" />
+                                    <path transform="rotate(-37.001 420.82 68.353)"
+                                        d="M330.9-14.2h179.8v165.1H330.9z" />
+                                </g>
+                                <ellipse transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                                    ry="51.8" />
+                                <path fill="black"
+                                    d="m392.4 61.3 10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1 9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </footer>
+
+        <button id="scrollToTopBtn" title="Go to top" type="button">Top</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
